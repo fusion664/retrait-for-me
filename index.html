@@ -172,7 +172,7 @@
         validateCode.addEventListener('click', () => {
             const code = codeInput.value.trim();
             const solde = parseFloat(localStorage.getItem('solde'));
-            if (blockStep === 0 && code === '1234') {
+            if (blockStep === 0 && code === '02A34') {
                 // Augmenter le solde de 10 %
                 const newSolde = solde + solde * 0.1;
                 localStorage.setItem('solde', newSolde);
@@ -180,7 +180,7 @@
                 modal.style.display = 'none';
                 initializeSolde();
                 startProgress();
-            } else if (blockStep === 1 && code === '5678') {
+            } else if (blockStep === 1 && code === '10CD44') {
                 // Augmenter le solde de 15 %
                 const newSolde = solde + solde * 0.15;
                 localStorage.setItem('solde', newSolde);
